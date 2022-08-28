@@ -6,35 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <title>Optimal-Huffman-Tree - GS³</title>
 </head>
 
 <body>
-
-
-    <div class="boxes">
-
+    <a href="https://github.com/G-S-3/Huffman" target="_blank">
+        <img src="githubLogo.png" alt="" id="github" style="position: absolute;right:0px;top:0px;">
+    </a>
+    <!-- Title -->
+    <div class="myDiv">
+        <h1 class="ml1">
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">HUFFMAN CODING</span>
+                <span class="line line2"></span>
+            </span>
+        </h1>
+    </div>
+    <!-- Input and Binary Equivalent -->
+    <div class="container">
         <textarea class="sc" id="paragraph_text" oninput="convert() ,main()" cols="51" rows="15"
             placeholder="Start Typing...."></textarea>
-        <div id="text_digit" class="digit">0</div>
-
         <div class="sc" id="binary"></div>
-        <div id="binary_digit" class="digit">0</div>
-
-        <div id="result">0</div>
-        <div class="sc" id="coded"></div>
-        <div id="encoded_digit" class="digit">0</div>
-
     </div>
 
-    <div class="box graph" id="huffman"></div>
+    <!-- Displaying bits before encoding -->
+    <div class="number">
+        Number of Bits Before Encoding <span class="no1" id="binary_digit"> </span>
+    </div>
 
+
+    <!-- After Encoding -->
+    <div class="sc" id="coded"></div>
+    <div class="number">
+        Number of Bits after Encoding <span class="no2" id="encoded_digit"> </span>
+    </div>
+
+
+    <!-- Frequency -->
     <div class="sc" id="freq"></div>
 
+    <!-- Huffman -->
+    <div class="encode">
+        <div class="box graph" id="huffman"></div>
 
-    <a href="https://github.com/G-S-3/Huffman" target="_blank">
-        <img src="githubLogo.png" alt="" id="github" style="position: absolute;right:0px">
-    </a>
+        <!-- Progress Bar -->
+        <div role="progressbar" class="progress" id="result" aria-valuemin="0" aria-valuemax="100" style="--value: 100">
+        </div>
+    </div>
+
+    <div class="last_result">
+        Compression ratio after Encoding is<div class="no2" id="nam_result"><div/>
+    </div>
+
+
 
 
     <script src="./js/index.js"></script>
