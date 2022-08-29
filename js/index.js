@@ -52,6 +52,7 @@ function convert() {
     for (; i < value.length; i++) {
         var binary = '';
         var characther = value.charCodeAt(i);
+       
 
 
         while (characther > 0) {
