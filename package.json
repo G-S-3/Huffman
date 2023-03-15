@@ -1,0 +1,23 @@
+{
+  "name": "huffman",
+  "version": "1.0.0",
+  "description": "This is a mini project on the subject **Design and Analysis of Algorithm(18CS42)** where we have implemented Huffman Coding Algorithm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-S-3/Huffman.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G-S-3/Huffman/issues"
+  },
+  "homepage": "https://github.com/G-S-3/Huffman#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
